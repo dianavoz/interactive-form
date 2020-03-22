@@ -16,8 +16,8 @@ button {
 
 body {
   font: 1em/1.5;
-  color: rgba(6, 49, 68, 0.9);
-	background: #CDE0FB;
+  color: rgb(7, 7, 7);
+  background: #BFCDD9;
 }
 
 header {
@@ -26,8 +26,13 @@ header {
 
 h1 {
 	font-size: 2.5em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85);
+	text-shadow: 0 1px 0 rgb(74, 82, 105);
 	margin: 0;
+	color: #51608C;
+}
+
+span{
+	color: #51608C;	
 }
 
 a {
@@ -40,8 +45,8 @@ a {
 
 form {
 	padding: .875em 1.875em 1.875em;
-	background: #9BBEEF;
-	border: 2px solid rgba(8, 63, 87, 0.7);
+	background: #93adc2;
+	border: 2px solid #93adc2;
 	border-radius: 3px;
 }
 
@@ -64,8 +69,9 @@ button {
 legend {
 	font-weight: bold;
 	padding-top: .5em;
-	border-top: 2px solid rgba(8, 63, 87, 0.6);
+	border-top: 2px solid #BFCDD9;
 	margin-bottom: 1.125em;
+	color: #51608C;
 }
 
 input[type="text"],
@@ -75,7 +81,7 @@ legend {
 }
 
 label {
-	color: #000;
+	color: rgb(12, 12, 12);
 	display: block;
 	margin-bottom: .5em;
 }
@@ -83,21 +89,24 @@ label {
 input,
 select {
 	margin-bottom: 1.125em;	
+	background: #e1eaf2;
 }
+
+
 
 input {
 	font-size: 1em;
 	font-weight: 500;
 	padding: .8em;
-	background: #e9f6fb;
-	border: 2px solid #6F9DDC;
+	background: #e1eaf2;
+	border: 2px solid #c5d2df;
 	border-radius: 3px;
 	outline: none;
 }
 
 input:focus {
 	background: #fff;
-	border-color: #5e97b0;
+	border-color: #c5d2df;
 	transition: border-color .4s, background-color .4s;
 }
 
@@ -107,19 +116,22 @@ input[type="radio"] {
 }
 
 button {
-	color: #fff;
+	color: rgb(245, 244, 243);
 	padding: .55em 1.25em;
-	background: #083f57;
+	background: #51608C;
 	margin: 1.25em 0 .5em;
 	cursor: pointer;
-	border: 2px solid black;
+	border: 2px solid rgb(80, 95, 138);
 	border-radius: 4px;
 	transition: all 0.5s;
 }
 
 button:hover {
-	background: #6F9DDC;
+	background: rgb(77, 91, 133);
 }
+
+
+
 
 input, 
 select, 
