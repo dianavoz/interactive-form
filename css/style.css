@@ -4,8 +4,8 @@
 
 * {
 	-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-  }
+	box-sizing: border-box;
+}
 
 body,
 input,
@@ -14,13 +14,13 @@ button {
 }
 
 body {
-  font: 1em/1.5;
-  color: rgb(7, 7, 7);
-  background: #BFCDD9;
+	font: 1em/1.5;
+	color: rgb(7, 7, 7);
+	background: #BFCDD9;
 }
 
 header {
-	text-align: center;  
+	text-align: center;
 }
 
 h1 {
@@ -30,13 +30,14 @@ h1 {
 	color: #51608C;
 }
 
-span{
-	color: #51608C;	
+span {
+	color: #51608C;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
+
 
 /* ================================= 
   Form Element Styles
@@ -62,7 +63,7 @@ fieldset {
 
 legend,
 button {
-	font-size: 1.25em;	
+	font-size: 1.25em;
 }
 
 legend {
@@ -87,11 +88,9 @@ label {
 
 input,
 select {
-	margin-bottom: 1.125em;	
+	margin-bottom: 1.125em;
 	background: #e1eaf2;
 }
-
-
 
 input {
 	font-size: 1em;
@@ -129,14 +128,12 @@ button:hover {
 	background: rgb(77, 91, 133);
 }
 
-
-
-
-input, 
-select, 
+input,
+select,
 option {
 	font-family: 'roboto', sans-serif;
 }
+
 
 /* ================================= 
   Page Styles
@@ -160,6 +157,7 @@ option {
 	margin-top: 1.25em;
 }
 
+
 /* ================================= 
   Helper Classes
 ==================================== */
@@ -169,10 +167,11 @@ option {
 }
 
 .clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
+	content: " ";
+	display: table;
+	clear: both;
 }
+
 
 /* ================================= 
   Media Queries
@@ -194,7 +193,7 @@ option {
 	.col {
 		float: left;
 	}
-	.col + .col {
+	.col+.col {
 		margin-left: 2.5%;
 	}
 	.col-3 {
@@ -203,7 +202,6 @@ option {
 	.col-6 {
 		width: 49%;
 	}
-
 	label {
 		clear: both;
 	}
