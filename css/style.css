@@ -2,11 +2,10 @@
   Base Element Styles
 ==================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono');
-
 * {
-  box-sizing: border-box;
-}
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+  }
 
 body,
 input,
