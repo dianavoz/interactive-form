@@ -10,13 +10,13 @@
 body,
 input,
 button {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Questrial', sans-serif;
 }
 
 body {
-	font: 1em/1.5;
-	color: rgb(7, 7, 7);
-	background: #BFCDD9;
+	font: 16px;
+	background: #384047;
+	font-family: sans-serif;
 }
 
 header {
@@ -25,17 +25,23 @@ header {
 
 h1 {
 	font-size: 2.5em;
-	text-shadow: 0 1px 0 rgb(74, 82, 105);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 	margin: 0;
-	color: #51608C;
+	color: rgb(187, 202, 223);
 }
 
-span {
-	color: #51608C;
+header span {
+	color: rgb(187, 202, 223);
 }
 
 a {
 	text-decoration: none;
+}
+
+.total {
+	font-size: 18.72px;
+	font-weight: bolder;
+	color: #384047;
 }
 
 
@@ -45,9 +51,11 @@ a {
 
 form {
 	padding: .875em 1.875em 1.875em;
-	background: #93adc2;
-	border: 2px solid #93adc2;
-	border-radius: 3px;
+	background: #fff;
+	border: 2px solid #303233;
+	box-shadow: 0 0 1em #222;
+	border-radius: 5px;
+	margin-bottom: 20px;
 }
 
 fieldset,
@@ -69,9 +77,9 @@ button {
 legend {
 	font-weight: bold;
 	padding-top: .5em;
-	border-top: 2px solid #BFCDD9;
+	border-top: 2px solid rgb(245, 247, 250);
 	margin-bottom: 1.125em;
-	color: #51608C;
+	color: #384047;
 }
 
 input[type="text"],
@@ -81,7 +89,7 @@ legend {
 }
 
 label {
-	color: rgb(12, 12, 12);
+	color: #333;
 	display: block;
 	margin-bottom: .5em;
 }
@@ -89,22 +97,28 @@ label {
 input,
 select {
 	margin-bottom: 1.125em;
-	background: #e1eaf2;
+	background: #F5F5F5;
+}
+
+select {
+	border: 1px solid #e5e5e5;
 }
 
 input {
 	font-size: 1em;
 	font-weight: 500;
 	padding: .8em;
-	background: #e1eaf2;
-	border: 2px solid #c5d2df;
+	background: #F5F5F5;
+	border: 1px solid #e5e5e5;
 	border-radius: 3px;
 	outline: none;
 }
 
 input:focus {
-	background: #fff;
-	border-color: #c5d2df;
+	background: #fcfbfb;
+	border: 1px solid #349ef5;
+	-webkit-transition: border-color .4s, background-color .4s;
+	-o-transition: border-color .4s, background-color .4s;
 	transition: border-color .4s, background-color .4s;
 }
 
@@ -114,24 +128,71 @@ input[type="radio"] {
 }
 
 button {
-	color: rgb(245, 244, 243);
+	color: #fff;
+	box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
 	padding: .55em 1.25em;
-	background: #51608C;
+	background: rgb(102, 110, 121);
 	margin: 1.25em 0 .5em;
 	cursor: pointer;
-	border: 2px solid rgb(80, 95, 138);
-	border-radius: 4px;
+	border: 1px solid rgb(102, 110, 121);
+	border-radius: 3px 3px 3px 3px;
+	text-shadow: 0 1px 0 rgb(19, 20, 20);
 	transition: all 0.5s;
 }
 
 button:hover {
-	background: rgb(77, 91, 133);
+	background: rgb(82, 88, 97);
 }
 
 input,
 select,
 option {
 	font-family: 'roboto', sans-serif;
+}
+
+.text-input-error {
+	border: 1px solid #df0000;
+}
+
+.error-msg {
+	color: #ffffff;
+	font-size: 0.8125em;
+	max-height: 50px;
+	padding: 0 0px 20px 0px;
+	color: #999;
+	transition: 0.28s;
+	overflow: hidden;
+	color: red;
+	font-style: italic;
+}
+
+.disabled {
+	color: #bbbbbb;
+}
+
+.disabled-btn {
+	background: #797979;
+	color: #d3d3d3;
+}
+
+.disabled-btn:hover {
+	background: #797979;
+}
+
+input[type="submit"] {
+	background: rgb(102, 110, 121);
+	box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 2em;
+	line-height: 1.6em;
+	margin: 2em 0 0;
+	outline: none;
+	padding: .8em 0;
+	text-shadow: 0 1px rgb(19, 20, 20);
 }
 
 
